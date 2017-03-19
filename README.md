@@ -83,6 +83,7 @@ Created in 2017 by [Oussama EL ABED](https://github.com/OElabed), Senior develop
 - How to install ansible on Babun for windows. see [link](https://www.azavea.com/blog/2014/10/30/running-vagrant-with-ansible-provisioning-on-windows/) 
 - How uses docker-compose. see [link](https://docs.docker.com/compose/gettingstarted/)
 - Useful vagrant boxes with ansible provisionning. see [link](https://github.com/geerlingguy/ansible-vagrant-examples)
+- Running Ansible on Windows. see [link](https://gist.github.com/maurizi/325387aee9ea94fbf903)
 
 License
 ----
