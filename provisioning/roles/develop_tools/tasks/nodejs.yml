@@ -1,0 +1,6 @@
+---
+- name: Run curl nodejs package
+  shell: curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+
+- name: install nodejs
+  apt: name=nodejs state=present update_cache='yes'

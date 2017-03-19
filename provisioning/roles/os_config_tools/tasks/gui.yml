@@ -1,0 +1,5 @@
+---
+- name: install gui ubuntu-desktop
+  apt: name=ubuntu-desktop state=present install_recommends='no' update_cache='yes'
+
+

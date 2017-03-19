@@ -1,0 +1,3 @@
+[submodule "provisioning/roles/angstwad.docker_ubuntu"]
+	path = provisioning/roles/angstwad.docker_ubuntu
+	url = https://github.com/angstwad/docker.ubuntu.git

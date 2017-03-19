@@ -1,0 +1,5 @@
+---
+- name: install build-essential
+  apt: name=build-essential state=present update_cache='yes'
+
+
