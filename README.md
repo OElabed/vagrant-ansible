@@ -84,7 +84,7 @@ Vagrant allows you to configure and use reproducible work environments on top of
 
 ## Author Information
 
-Created in 2017 by [Oussama EL ABED](https://github.com/OElabed), Senior developer.
+Created in 2017 by [Oussama EL ABED](https://github.com/OElabed), Software developer.
 
 ## Related links
 - How to install ansible on Babun for windows. see [link](https://www.azavea.com/blog/2014/10/30/running-vagrant-with-ansible-provisioning-on-windows/) 
