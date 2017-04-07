@@ -12,6 +12,13 @@ The box install a number of open source tools to work properly:
 * `SonarQube` - Static Analyses for java project 
 * `JQ` For json commandline viewer
 
+## Clone Repository
+
+To clone repository you need to add `--recursive` that import all submodules related. 
+
+```sh
+  git clone --recursive  https://github.com/OElabed/vagrant-ansible.git
+```
 ## Getting Started
 
 This README file is inside a folder that contains a `Vagrantfile` (hereafter this folder shall be called the [vagrant_root]), which tells Vagrant how to set up your virtual machine in VirtualBox.

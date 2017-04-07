@@ -1,6 +1,24 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+module OS
+    def OS.windows?
+        (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
+    end
+
+    def OS.mac?
+        (/darwin/ =~ RUBY_PLATFORM) != nil
+    end
+
+    def OS.unix?
+        !OS.windows?
+    end
+
+    def OS.linux?
+        OS.unix? and not OS.mac?
+    end
+end
+
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
@@ -78,8 +96,16 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # 
-  config.vm.provision "ansible_local" do |ansible|
-    ansible.playbook = "provisioning/playbook.yml"
+  if OS.windows?
+      config.vm.provision "shell", path: "provision.sh"
+  else
+      config.vm.provision "ansible_local" do |ansible|
+        ansible.playbook = "provisioning/playbook.yml"
+      end
   end
+
+  # config.vm.provision "ansible_local" do |ansible|
+  #   ansible.playbook = "provisioning/playbook.yml"
+  # end
 
 end
