@@ -1,0 +1,10 @@
+---
+- name: set keyboard layout
+  template:
+      src: keyboard.j2
+      dest: /etc/default/keyboard
+      owner: root
+      group: root
+      mode: 0644
+  notify:
+    - load keyboardlayout

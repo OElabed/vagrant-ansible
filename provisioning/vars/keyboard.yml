@@ -1,0 +1,6 @@
+---
+keyboard_model: "pc105"
+keyboard_layout: "fr"
+keyboard_variant: ""
+keyboard_options: "terminate:ctrl_alt_bksp"
+keyboard_backspace: "guess"

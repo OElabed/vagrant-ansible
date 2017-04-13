@@ -1,0 +1,3 @@
+---
+- name: load keyboardlayout
+  command: invoke-rc.d keyboard-setup start

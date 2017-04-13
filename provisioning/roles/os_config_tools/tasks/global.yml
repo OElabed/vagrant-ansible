@@ -1,4 +1,0 @@
----
-- name: Set timezone
-  shell: timedatectl set-timezone Europe/Paris
-

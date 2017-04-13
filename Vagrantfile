@@ -60,7 +60,7 @@ Vagrant.configure("2") do |config|
   #
    config.vm.provider "virtualbox" do |vb|
      # Display the VirtualBox GUI when booting the machine
-     # vb.gui = true
+     vb.gui = true
      vb.name = "sample-vagrant-ansible"
      # Customize the amount of memory on the VM:
      vb.customize ["modifyvm", :id, "--memory", "4096"]
@@ -84,13 +84,13 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # 
-  if OS.windows?
+  # if OS.windows?
       config.vm.provision "shell", path: "provision.sh"
-  else
-      config.vm.provision "ansible_local" do |ansible|
-        ansible.playbook = "provisioning/playbook.yml"
-      end
-  end
+  # else
+  #     config.vm.provision "ansible_local" do |ansible|
+  #       ansible.playbook = "provisioning/playbook.yml"
+  #     end
+  # end
 
   # config.vm.provision "ansible_local" do |ansible|
   #   ansible.playbook = "provisioning/playbook.yml"

@@ -1,3 +1,6 @@
 [submodule "provisioning/roles/angstwad.docker_ubuntu"]
 	path = provisioning/roles/angstwad.docker_ubuntu
 	url = https://github.com/angstwad/docker.ubuntu.git
+[submodule "provisioning/roles/gantsign.keyboard"]
+	path = provisioning/roles/gantsign.keyboard
+	url = https://github.com/gantsign/ansible-role-keyboard.git
