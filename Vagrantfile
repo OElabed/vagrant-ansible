@@ -84,13 +84,13 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # 
-  # if OS.windows?
-      config.vm.provision "shell", path: "provision.sh"
-  # else
-  #     config.vm.provision "ansible_local" do |ansible|
-  #       ansible.playbook = "provisioning/playbook.yml"
-  #     end
-  # end
+  if OS.windows?
+    config.vm.provision "shell", path: "provision.sh"
+  else
+      config.vm.provision "ansible_local" do |ansible|
+        ansible.playbook = "provisioning/playbook.yml"
+      end
+  end
 
   # config.vm.provision "ansible_local" do |ansible|
   #   ansible.playbook = "provisioning/playbook.yml"
